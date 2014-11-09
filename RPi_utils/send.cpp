@@ -22,6 +22,7 @@ int main(int argc, char *argv[]) {
 	RCSwitch mySwitch = RCSwitch();
 	mySwitch.enableTransmit(PIN);
 	mySwitch.setProtocol(2);
+	mySwitch.setRepeatTransmit (15);
 	mySwitch.setPulseLength(800);
 	mySwitch.send(code,15);
     return 0;
