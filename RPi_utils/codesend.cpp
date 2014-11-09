@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 	RCSwitch mySwitch = RCSwitch();
 	mySwitch.enableTransmit(PIN);
     
-    mySwitch.send(code, 24);
+    mySwitch.send(code, 15);
     
 	return 0;
 
