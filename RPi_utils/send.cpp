@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
 	printf("sending code[%d]\n", code);
 	RCSwitch mySwitch = RCSwitch();
 	mySwitch.enableTransmit(PIN);
+	mySwitch.setProtocol(2);
 	mySwitch.setPulseLength(800);
 	mySwitch.send(code,15);
     return 0;
