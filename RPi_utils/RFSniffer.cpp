@@ -49,7 +49,6 @@ int main(int argc, char *argv[]) {
           myfile << "Writing this to a file.\n";
           myfile.close();
           return 0;
-}
         }
     
         mySwitch.resetAvailable();
