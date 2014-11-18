@@ -13,21 +13,20 @@
 #include <iostream>
 using namespace std;
 
+int TVRoomTemp
 void filewriter()
 {
   char str[10];
   //opens file
   ofstream a_file ( "temperature_log.txt" );
   // Outputs to file
-  a_file<<getReceivedValue();
+  a_file<<TVRoomTemp();
   // Close the file
   a_file.close();
 }
    
 RCSwitch mySwitch;
  
-
-
 int main(int argc, char *argv[]) {
   
      // This pin is not the first pin on the RPi GPIO header!
@@ -53,6 +52,7 @@ int main(int argc, char *argv[]) {
         } else {    
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
+          TVRoomTemp = mySwitch.getReceivedValue();
           filewriter();
         }
         
@@ -67,4 +67,3 @@ int main(int argc, char *argv[]) {
 
 
 }
-
