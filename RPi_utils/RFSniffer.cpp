@@ -13,7 +13,7 @@
 #include <iostream>
 using namespace std;
 
-int TVRoomTemp()
+
 
 void filewriter()
 {
@@ -29,7 +29,7 @@ void filewriter()
 RCSwitch mySwitch;
  
 int main(int argc, char *argv[]) {
-  
+int TVRoomTemp()  
      // This pin is not the first pin on the RPi GPIO header!
      // Consult https://projects.drogon.net/raspberry-pi/wiringpi/pins/
      // for more information.
