@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
           myfile.close();
           return 0;
         }
-    
+        }
         mySwitch.resetAvailable();
     
       }
