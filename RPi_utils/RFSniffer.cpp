@@ -14,7 +14,6 @@
 using namespace std;
 
 void filewriter();
-int main()
 {
   char str[10];
 
