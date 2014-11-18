@@ -9,7 +9,8 @@
 #include "RCSwitch.h"
 #include <stdlib.h>
 #include <stdio.h>
-     
+#include <iostream> //added to test file writing
+#include <fstream>  //added to test file writing   
      
 RCSwitch mySwitch;
  
@@ -40,6 +41,15 @@ int main(int argc, char *argv[]) {
         } else {    
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
+          // basic file operations
+          using namespace std;
+          int main () {
+          ofstream myfile;
+          myfile.open ("example.txt");
+          myfile << "Writing this to a file.\n";
+          myfile.close();
+          return 0;
+}
         }
     
         mySwitch.resetAvailable();
