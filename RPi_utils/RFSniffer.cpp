@@ -13,10 +13,9 @@
 #include <iostream> //file writing
 using namespace std;
 
-void filewriter();
+void filewriter()
 {
   char str[10];
-
   //Creates an instance of ofstream, and opens example.txt
   ofstream a_file ( "example.txt" );
   // Outputs to example.txt through a_file
