@@ -11,6 +11,20 @@
 #include <stdio.h>
 #include <fstream> //file writing
 #include <iostream> //file writing
+using namespace std;
+
+void filewriter();
+int main()
+{
+  char str[10];
+
+  //Creates an instance of ofstream, and opens example.txt
+  ofstream a_file ( "example.txt" );
+  // Outputs to example.txt through a_file
+  a_file<<"This text will now be inside of example.txt";
+  // Close the file stream explicitly
+  a_file.close();
+}
    
 RCSwitch mySwitch;
  
@@ -41,19 +55,7 @@ int main(int argc, char *argv[]) {
         } else {    
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
-          using namespace std;
-
-int main()
-{
-  char str[10];
-
-  //Creates an instance of ofstream, and opens example.txt
-  ofstream a_file ( "example.txt" );
-  // Outputs to example.txt through a_file
-  a_file<<"This text will now be inside of example.txt";
-  // Close the file stream explicitly
-  a_file.close();
-}
+          filewriter();
         }
         
         mySwitch.resetAvailable();
