@@ -19,7 +19,7 @@ void filewriter()
 {
   char str[10];
   //opens file
-  ofstream a_file ( "temperature_log.txt" );
+  ofstream a_file ( "temperature_log.txt", ios::app );
   // Outputs to file
   a_file<<"Temperature Reading goes here";
   // Close the file
