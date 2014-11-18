@@ -41,6 +41,7 @@ int main(int argc, char *argv[]) {
           printf("Received %i\n", mySwitch.getReceivedValue() );
           printf("matty");
         }
+        
         mySwitch.resetAvailable();
     
       }
