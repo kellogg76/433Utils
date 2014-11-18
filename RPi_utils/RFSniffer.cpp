@@ -9,18 +9,18 @@
 #include "RCSwitch.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <fstream> //file writing
-#include <iostream> //file writing
+#include <fstream>
+#include <iostream>
 using namespace std;
 
 void filewriter()
 {
   char str[10];
-  //Creates an instance of ofstream, and opens example.txt
-  ofstream a_file ( "example.txt" );
-  // Outputs to example.txt through a_file
-  a_file<<"This text will now be inside of example.txt";
-  // Close the file stream explicitly
+  //opens file
+  ofstream a_file ( "temperature_log.txt" );
+  // Outputs to file
+  a_file<<mySwitch.getReceivedValue();
+  // Close the file
   a_file.close();
 }
    
