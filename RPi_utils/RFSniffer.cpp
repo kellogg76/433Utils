@@ -21,7 +21,7 @@ void filewriter()
   //opens file
   ofstream a_file ( "temperature_log.txt" );
   // Outputs to file
-  a_file<<TVRoomTemp();
+  a_file<<"Temperature Reading goes here";
   // Close the file
   a_file.close();
 }
