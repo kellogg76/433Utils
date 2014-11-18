@@ -21,7 +21,7 @@ void filewriter()
   //opens file
   ofstream a_file ( "temperature_log.txt", ios::app );
   // Outputs to file
-  a_file<<"Temperature Reading goes here"; //change to temp variable and add a timestamp
+  a_file<<"Temperature Reading goes here"; //change to a temp variable and add a timestamp
   // Close the file
   a_file.close();
 }
