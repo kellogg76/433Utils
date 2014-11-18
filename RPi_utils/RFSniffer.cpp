@@ -19,7 +19,7 @@ void filewriter()
   //opens file
   ofstream a_file ( "temperature_log.txt" );
   // Outputs to file
-  a_file<<mySwitch.getReceivedValue();
+  a_file<<getReceivedValue();
   // Close the file
   a_file.close();
 }
