@@ -29,7 +29,6 @@ void filewriter()
 RCSwitch mySwitch;
  
 int main(int argc, char *argv[]) {
-int TVRoomTemp()  
      // This pin is not the first pin on the RPi GPIO header!
      // Consult https://projects.drogon.net/raspberry-pi/wiringpi/pins/
      // for more information.
@@ -53,7 +52,6 @@ int TVRoomTemp()
         } else {    
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
-          TVRoomTemp = mySwitch.getReceivedValue();
           filewriter();
         }
         
