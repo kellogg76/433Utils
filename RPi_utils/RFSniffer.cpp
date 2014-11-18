@@ -13,7 +13,8 @@
 #include <iostream>
 using namespace std;
 
-int TVRoomTemp
+int TVRoomTemp()
+
 void filewriter()
 {
   char str[10];
