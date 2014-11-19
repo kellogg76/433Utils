@@ -12,13 +12,13 @@
 using namespace std;
 
 
-void filewriter()
+void filewriter(int a)
 {
   char str[10];
   //opens file
   ofstream a_file ( "temperature_log.txt", ios::app );
   // Outputs to file
-  a_file<<"Temperature Reading goes here"; //change to a temp variable and add a timestamp
+  a_file<<int a; //change to a temp variable and add a timestamp
   // Close the file
   a_file.close();
 }
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
         } else {    
    
           printf("Received %i\n", mySwitch.getReceivedValue() );
-          filewriter();
+          filewriter(mySwitch.getReceivedValue);
         }
         
         mySwitch.resetAvailable();
