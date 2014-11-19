@@ -48,7 +48,9 @@ int main(int argc, char *argv[]) {
         } else {    
    
           //printf("Received %i\n", mySwitch.getReceivedValue() );
-          printf(mySwitch.getReceivedValue() );
+          mySwitch.getReceivedValue int vIn = 0;
+		  char vOut = (char)vIn;
+          printf(char);
           filewriter();
         }
         
