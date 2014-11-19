@@ -47,10 +47,7 @@ int main(int argc, char *argv[]) {
           printf("Unknown encoding");
         } else {    
    
-          //printf("Received %i\n", mySwitch.getReceivedValue() );
-          mySwitch.getReceivedValue int vIn = 0;
-		  char vOut = (char)vIn;
-          printf(char);
+          printf("Received %i\n", mySwitch.getReceivedValue() );
           filewriter();
         }
         
