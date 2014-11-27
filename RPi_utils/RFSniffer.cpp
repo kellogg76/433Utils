@@ -12,24 +12,32 @@
 #include <time.h>
 using namespace std;
 
-//File Writing Function called on line 61
+//File Writing Function called on line 69
 void filewriter(int a)
 {
   //Get a timestamp
   time_t rawtime;
   struct tm * timeinfo;
-
   time (&rawtime);
   timeinfo = localtime (&rawtime);
 
-//Open, Write and close the temperature_log.txt file
+//Open, Write and close the TVRoom_temp_log.txt file
   char str[10];
   //opens file
-  ofstream a_file ( "temperature_log.txt", ios::app );
+  ofstream TVRoom-log_file ( "TVRoom_temp_log.txt", ios::app );
   // Outputs to file
-  a_file << asctime(timeinfo) << "," << a << endl;
+  TVRoom-log_file << asctime(timeinfo) << "," << a << endl;
   // Close the file
-  a_file.close();
+  TVRoom-log_file.close();
+  
+  //Open, Write and close the TVRoom_temp.txt file
+  char str[10];
+  //opens file
+  ofstream TVRoom_file ( "TVRoom_temp.txt" );
+  // Outputs to file
+  TVRoom_file << a << endl;
+  // Close the file
+  TVRoom_file.close();
 }
    
 RCSwitch mySwitch;
