@@ -12,23 +12,22 @@
 #include <time.h>
 using namespace std;
 
-
+//File Writing Function called on line 61
 void filewriter(int a)
 {
+  //Get a timestamp
   time_t rawtime;
   struct tm * timeinfo;
 
   time (&rawtime);
   timeinfo = localtime (&rawtime);
-  //printf ("Current local time and date: %s", asctime(timeinfo));
 
-  //return 0;
-
+//Open, Write and close the temperature_log.txt file
   char str[10];
   //opens file
   ofstream a_file ( "temperature_log.txt", ios::app );
   // Outputs to file
-  a_file << asctime(timeinfo) << "," << a << endl; //change to a temp variable and add a timestamp
+  a_file << asctime(timeinfo) << "," << a << endl;
   // Close the file
   a_file.close();
 }
