@@ -72,8 +72,6 @@ int main(int argc, char *argv[]) {
         mySwitch.resetAvailable();
     
       }
-      
-  
   }
 
   exit(0);
