@@ -24,14 +24,14 @@ void filewriter(int a)
 //Open, Write and close the TVRoom_temp_log.txt file
   char str[10];
   //opens file
-  ofstream TVRoom-log_file ( "TVRoom_temp_log.txt", ios::app );
+  ofstream TVRoomlog ( "TVRoom_temp_log.txt", ios::app );
   // Outputs to file
-  TVRoom-log_file << asctime(timeinfo) << "," << a << endl;
+  TVRoomlog << asctime(timeinfo) << "," << a << endl;
   // Close the file
-  TVRoom-log_file.close();
+  TVRoomlog.close();
   
   //Open, Write and close the TVRoom_temp.txt file
-  char str[10];
+  //char str[10];
   //opens file
   ofstream TVRoom_file ( "TVRoom_temp.txt" );
   // Outputs to file
