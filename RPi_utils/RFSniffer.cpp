@@ -31,7 +31,6 @@ void filewriter(int a)
   TVRoomlog.close();
   
   //Open, Write and close the TVRoom_temp.txt file
-  //char str[10];
   //opens file
   ofstream TVRoom_file ( "TVRoom_temp.txt" );
   // Outputs to file
