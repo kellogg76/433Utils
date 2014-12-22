@@ -24,7 +24,7 @@ void filewriter(int a)
 //Open, Write and close the TVRoom_temp_log.txt file
   char str[10];
   //opens file
-  ofstream TVRoomlog ( "TVRoom_temp_log.txt", ios::app );
+  ofstream TVRoomlog ( "/home/pi/scripts/TVRoom_temp_log.txt", ios::app );
   // Outputs to file
   TVRoomlog << asctime(timeinfo) << "," << a << endl;
   // Close the file
@@ -32,7 +32,7 @@ void filewriter(int a)
   
   //Open, Write and close the TVRoom_temp.txt file
   //opens file
-  ofstream TVRoom_file ( "TVRoom_temp.txt" );
+  ofstream TVRoom_file ( "/home/pi/scripts/TVRoom_temp.txt" );
   // Outputs to file
   TVRoom_file << a << endl;
   // Close the file
